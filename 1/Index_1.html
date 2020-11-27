@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --img-size-: 500px;
+        }
+
+        img {
+            width: calc(var(--img-size-) / 10);
+            height: calc(var(--img-size-) / 10);
+            filter: grayscale(50%);
+            margin-top: 300px;
+            transition: 3s;
+            border-style: solid;
+        }
+
+        img:hover {
+            width: var(--img-size-);
+            height: var(--img-size-);
+            transition: 8s;
+            filter: grayscale(10%);
+            filter: blur(1px);
+            filter: brightness(0.4);
+            filter: contrast(200%);
+            filter: drop-shadow(26px 26px 30px rgb(155, 7, 147));
+
+        }
+
+        .m {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="m">
+        <img src="imges.jpg" alt="картинка">
+        <img src="imges.jpg" alt="картинка">
+        <img src="imges.jpg" alt="картинка">
+        <img src="imges.jpg" alt="картинка">
+        <img src="imges.jpg" alt="картинка">
+
+
+    </div>
+</body>
+
+</html>

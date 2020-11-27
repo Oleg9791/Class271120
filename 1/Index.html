@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --img-size-: 700px;
+        }
+
+        img {
+            width: calc(var(--img-size-) / 10);
+            height: calc(var(--img-size-) / 10);
+            filter: grayscale(50%);
+            margin-top: 300px;
+        }
+
+        img:hover {
+            width: var(--img-size-);
+            height: var(--img-size-);
+            transition: 3s;
+            filter: grayscale(0%);
+        }
+
+        .m {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="m">
+        <img src="imges.jpg" alt="картинка">
+        <img src="imges.jpg" alt="картинка">
+    </div>
+</body>
+
+</html>
